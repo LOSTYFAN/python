@@ -269,10 +269,6 @@ async def recognizeFile(response, filePath):
     # 判断是否有该文件
     if os.path.isfile(filePath):
         fileSize = int(os.path.getsize(filePath))
-        print('responseFileSize')
-        print(responseFileSize)
-        print('fileSize')
-        print(fileSize)
         # 判断字节数是否相等
         if fileSize == responseFileSize:
             return True
